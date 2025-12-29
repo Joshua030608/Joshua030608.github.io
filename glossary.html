@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glosario | Biblioteca de Admisiones Universitarias</title>
+  <meta name="description" content="Glosario en español de términos comunes de admisiones universitarias y ayuda financiera.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Biblioteca de Admisiones Universitarias</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="glosario.html">Glosario</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#ayuda">Ayuda Financiera</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#becas">Becas y Programas</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-bg text-white py-5">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-lg-8">
+          <h1 class="display-6 fw-bold mb-2">Glosario</h1>
+          <p class="lead mb-0">Definiciones claras de términos comunes de admisiones y ayuda financiera.</p>
+        </div>
+        <div class="col-lg-4">
+          <form class="d-flex" role="search">
+            <input id="glossarySearch" class="form-control form-control-lg" type="search" placeholder="Busca un término…" aria-label="Buscar en el glosario">
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container" style="max-width: 900px;">
+      <div class="d-flex flex-wrap gap-2 mb-4">
+        <span class="badge text-bg-light border">Admisiones</span>
+        <span class="badge text-bg-light border">Ayuda financiera</span>
+        <span class="badge text-bg-light border">Solicitudes</span>
+        <span class="badge text-bg-light border">Becas</span>
+      </div>
+
+      <div class="accordion shadow-sm" id="glossaryAccordion">
+
+        <div class="accordion-item" data-glossary-item>
+          <h2 class="accordion-header" id="h-fafsa">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c-fafsa" aria-expanded="true" aria-controls="c-fafsa">
+              FAFSA
+            </button>
+          </h2>
+          <div id="c-fafsa" class="accordion-collapse collapse show" aria-labelledby="h-fafsa" data-bs-parent="#glossaryAccordion">
+            <div class="accordion-body">
+              Solicitud Gratuita de Ayuda Federal para Estudiantes. Es el formulario principal para determinar elegibilidad para ayuda federal (y muchas veces estatal e institucional).
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-glossary-item>
+          <h2 class="accordion-header" id="h-css">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-css" aria-expanded="false" aria-controls="c-css">
+              CSS Profile
+            </button>
+          </h2>
+          <div id="c-css" class="accordion-collapse collapse" aria-labelledby="h-css" data-bs-parent="#glossaryAccordion">
+            <div class="accordion-body">
+              Formulario usado por algunas universidades para calcular ayuda institucional (además de FAFSA). No todas las universidades lo requieren.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-glossary-item>
+          <h2 class="accordion-header" id="h-sat">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-sat" aria-expanded="false" aria-controls="c-sat">
+              SAT / ACT
+            </button>
+          </h2>
+          <div id="c-sat" class="accordion-collapse collapse" aria-labelledby="h-sat" data-bs-parent="#glossaryAccordion">
+            <div class="accordion-body">
+              Exámenes estandarizados que algunas universidades consideran en admisiones. Muchas escuelas son “test-optional”, pero depende de cada institución.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-glossary-item>
+          <h2 class="accordion-header" id="h-gpa">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-gpa" aria-expanded="false" aria-controls="c-gpa">
+              GPA
+            </button>
+          </h2>
+          <div id="c-gpa" class="accordion-collapse collapse" aria-labelledby="h-gpa" data-bs-parent="#glossaryAccordion">
+            <div class="accordion-body">
+              Promedio de calificaciones. Puede ser ponderado (weighted) o no ponderado (unweighted), según la escuela.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-glossary-item>
+          <h2 class="accordion-header" id="h-commonapp">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-commonapp" aria-expanded="false" aria-controls="c-commonapp">
+              Common App
+            </button>
+          </h2>
+          <div id="c-commonapp" class="accordion-collapse collapse" aria-labelledby="h-commonapp" data-bs-parent="#glossaryAccordion">
+            <div class="accordion-body">
+              Plataforma que permite solicitar admisión a múltiples universidades con una solicitud común, más suplementos específicos por escuela.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-glossary-item>
+          <h2 class="accordion-header" id="h-ed">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-ed" aria-expanded="false" aria-controls="c-ed">
+              Early Decision (ED)
+            </button>
+          </h2>
+          <div id="c-ed" class="accordion-collapse collapse" aria-labelledby="h-ed" data-bs-parent="#glossaryAccordion">
+            <div class="accordion-body">
+              Plan de solicitud temprana y vinculante: si te aceptan, te comprometes a asistir (con algunas excepciones relacionadas a ayuda financiera).
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-glossary-item>
+          <h2 class="accordion-header" id="h-ea">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-ea" aria-expanded="false" aria-controls="c-ea">
+              Early Action (EA)
+            </button>
+          </h2>
+          <div id="c-ea" class="accordion-collapse collapse" aria-labelledby="h-ea" data-bs-parent="#glossaryAccordion">
+            <div class="accordion-body">
+              Solicitud temprana no vinculante: recibes decisión antes, pero no estás obligado a asistir si te aceptan.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-glossary-item>
+          <h2 class="accordion-header" id="h-needblind">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-needblind" aria-expanded="false" aria-controls="c-needblind">
+              Need-blind / Need-aware
+            </button>
+          </h2>
+          <div id="c-needblind" class="accordion-collapse collapse" aria-labelledby="h-needblind" data-bs-parent="#glossaryAccordion">
+            <div class="accordion-body">
+              “Need-blind” significa que la capacidad de pagar no se considera en la decisión de admisión (según políticas específicas). “Need-aware” significa que sí puede considerarse.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-glossary-item>
+          <h2 class="accordion-header" id="h-feewaiver">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-feewaiver" aria-expanded="false" aria-controls="c-feewaiver">
+              Fee Waiver
+            </button>
+          </h2>
+          <div id="c-feewaiver" class="accordion-collapse collapse" aria-labelledby="h-feewaiver" data-bs-parent="#glossaryAccordion">
+            <div class="accordion-body">
+              Exención de pago que elimina o reduce el costo de enviar una solicitud o un examen, según elegibilidad.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-auto bg-dark text-light py-4">
+    <div class="container text-center small">
+      <span id="year"></span> - <span id="year2"></span> Biblioteca de Admisiones Universitarias · <a href="#" class="text-decoration-underline text-light">Acerca de</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
